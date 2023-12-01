@@ -11,7 +11,7 @@ function factor(num) {
         }
     }
 
-    container.innerText = factors;
+    container.innerText = factors; // this is my project specific
 }
 
 factor(number);
