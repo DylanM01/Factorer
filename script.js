@@ -1,5 +1,6 @@
 const container = document.getElementById("container");
 const factorButton = document.getElementById('factor');
+const clearButton = document.getElementById('clear')
 
 function factor(num) {
     let factors = [];
@@ -23,3 +24,7 @@ factorButton.addEventListener('click', () => {
 
     factor(number);
 });
+
+clearButton.addEventListener('click', () => {
+    container.innerHTML = ""
+})
