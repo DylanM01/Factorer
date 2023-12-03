@@ -1,6 +1,7 @@
 const container = document.getElementById("container");
 const factorButton = document.getElementById('factor');
-const clearButton = document.getElementById('clear')
+const clearButton = document.getElementById('clear');
+const sqrRootButton = document.getElementById('sqrroot')
 
 function factor(num) {
     let factors = [];
@@ -27,4 +28,16 @@ factorButton.addEventListener('click', () => {
 
 clearButton.addEventListener('click', () => {
     container.innerHTML = ""
+})
+
+function squareRoot(num) {
+    let number = Math.sqrt(num);
+    container.innerHTML += number + '<br>'
+}
+
+sqrRootButton.addEventListener('click', () => {
+    let numToSqrRoot = prompt('Give a number to square root');
+    let number = parseInt(numToSqrRoot)
+
+    squareRoot(number);
 })
